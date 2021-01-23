@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C:\Users\kiệt\Documents\GitHub\mycv-tuankiet\proj.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <title>Personal Project</title>
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+    <img src="C:\Users\kiệt\Documents\GitHub\mycv-tuankiet\Logo.png" alt="#" class="logo">
+    <nav>
+      <a href="#" class="hide-desktop">
+        <img src="C:\Users\kiệt\Documents\GitHub\mycv-tuankiet\ham.png" alt="toggle menu" class="menu" id="menu">
+      </a>
+      <ul class="show-desktop hide-mobile" id="nav">
+        <li id="exit" class="exit-btn hide-desktop" ><img src="C:\Users\kiệt\Documents\GitHub\mycv-tuankiet\exit.png" alt="exit menu" class="menu"></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#"> My Skills </a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+  </div>
+  <div>
+    <h1 class="bossname">Tuấn Kiệt</h1>
+    <h2 class="intro">Web and Mobile Developer</h2>
+  </div>
+  <footer>
+    <p>This website is design by me - No copyright</p>
+  </footer>
+
+  <script>
+    var menu=document.getElementById('menu');
+    var nav=document.getElementById('nav');
+    var exit=document.getElementById('exit');
+    menu.addEventListener('click', function(e){
+      nav.classList.toggle('hide-mobile');
+      e.preventDefault();
+    });
+    exit.addEventListener('click', function(e){
+      nav.classList.add('hide-mobile');
+      e.preventDefault();
+    });
+    
+  </script>
+</body>
+
+</html>
